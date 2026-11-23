@@ -37,6 +37,12 @@ window.ANNIVERSARY_CONFIG = {
       location: "Day One"
     },
     {
+      src: "photos/kuta_beach_day_one.jpg",
+      caption: "The first day • 24 Nov 2023: Kuta Beach, Bali sunset where you said YES 🌊🌅🤍",
+      year: "24 Nov 2023",
+      location: "Kuta Beach, Bali"
+    },
+    {
       src: "photos/together_3.jpg",
       caption: "Wrapped in each other's arms overlooking the night lights — my favorite place in this whole world 💫",
       year: "2024",
