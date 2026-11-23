@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kyan & Alin • 3-Year Love Adventure | Nov 24, 2026 💖</title>
+  
+  <!-- Retro Pixel Font & Modern Romantic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700&family=Press+Start+2P&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pixel-theme">
+
+  <!-- ========================================================= -->
+  <!-- 🕹️ CODÉDEX-STYLE RETRO PIXEL TOP NAVIGATION               -->
+  <!-- ========================================================= -->
+  <nav class="pixel-navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-coin">🪙</span>
+        <span class="brand-title">Kyan & Alin</span>
+        <span class="level-tag">LVL 3 UNLOCKED</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="#hero-section" class="nav-link active">Adventure</a>
+        <a href="#package-anchor" class="nav-link">Care Package</a>
+        <a href="#hub-anchor" class="nav-link">Quests</a>
+        <a href="#photos-anchor" class="nav-link">Just Us</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="live-counter-badge" id="nav-live-counter">
+          <span class="heart-pulse">💖</span>
+          <span id="nav-days-ticker">1,096 Days</span>
+        </div>
+        <button id="music-toggle-btn" class="pixel-btn pixel-btn-yellow" aria-label="Toggle Romantic Music">
+          <span>🎵 Music</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========================================================= -->
+  <!-- 🌄 CODÉDEX-STYLE 16-BIT RETRO PIXEL HERO SECTION          -->
+  <!-- ========================================================= -->
+  <header class="pixel-hero" id="hero-section">
+    <!-- Animated 16-bit Canvas Landscape (Sky, Clouds, Mountains, Grass, Flowers) -->
+    <canvas id="pixel-landscape-canvas"></canvas>
+
+    <!-- Hero Content Overlay -->
+    <div class="hero-content">
+      <div class="hero-sup-title">START YOUR</div>
+      
+      <h1 class="hero-main-title">
+        <span class="title-word-1">3-Year</span>
+        <span class="title-word-2">Love Adventure</span>
+      </h1>
+
+      <p class="hero-tagline">
+        The most beautiful journey from Kuta Beach, Bali across 670 km between Surabaya & Bandung. ⋆ ✦
+      </p>
+
+      <!-- Big Golden Retro Button -->
+      <div class="hero-cta-wrapper">
+        <button id="hero-start-btn" class="pixel-btn-hero">
+          <span>🎁 Open Care Package</span>
+        </button>
+      </div>
+
+      <!-- Cute Retro Mascot (Desktop monitor with smiling face & flutter butterfly) -->
+      <div class="hero-mascot-container">
+        <div class="pixel-monitor" id="mascot-monitor" style="cursor: pointer;" title="Tap me!">
+          <div class="monitor-screen" id="mascot-screen">
+            <span class="monitor-face" id="mascot-face">• ‿ •</span>
+          </div>
+          <div class="monitor-stand"></div>
+          <div class="flutter-butterfly">🦋</div>
+          <!-- Hidden Easter Egg Bubble -->
+          <div class="secret-mascot-bubble hidden" id="secret-bubble">
+            MAUU BOOBIESS 😳🙈💖
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Badges Bar (Inspired by Codédex Supported By) -->
+      <div class="hero-footer-bar">
+        <span class="footer-label">BEGAN AT</span>
+        <span class="badge-item">🌊 Kuta Beach, Bali (Nov 24, 2023)</span>
+        <span class="badge-divider">•</span>
+        <span class="badge-item">📍 Surabaya ➔ Bandung (670 km)</span>
+        <span class="badge-divider">•</span>
+        <span class="badge-item">⏳ 1,096 Days Together</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 📦 PHASE 1: RETRO PIXEL CARE PACKAGE UNBOXING             -->
+  <!-- ========================================================= -->
+  <main class="main-content-flow" id="package-anchor">
+    
+    <section id="care-package-stage" class="package-section">
+      <div class="section-badge">LEVEL 3 ANNIVERSARY QUEST</div>
+      <h2 class="section-title">Special Delivery from Surabaya ➔ Bandung</h2>
+      <p class="section-desc">A package packed with 1,096 days of memories, sweet treats, and letters.</p>
+
+      <!-- Retro Parcel Container -->
+      <div class="pixel-parcel-card" id="pixel-parcel">
+        <!-- Airmail border strip -->
+        <div class="airmail-strip"></div>
+
+        <div class="parcel-inner">
+          <div class="parcel-header">
+            <div class="courier-title">★ LDR EXPRESS ★ RETRO CARRIER</div>
+            <div class="tracking-pill" id="tracking-num">KYAN-ALIN-BALI-SUB-BDO-2026</div>
+          </div>
+
+          <div class="parcel-route-box">
+            <div class="route-point">
+              <span class="point-lbl">ORIGIN:</span>
+              <strong>Surabaya (SUB)</strong>
+              <small>From: Kyan with all my heart</small>
+            </div>
+            <div class="route-arrow">➔ 670 KM ➔</div>
+            <div class="route-point">
+              <span class="point-lbl">DESTINATION:</span>
+              <strong>Bandung (BDO)</strong>
+              <small>To: Alin, the prettiest girl</small>
+            </div>
+          </div>
+
+          <div class="parcel-stamps-row">
+            <div class="pixel-stamp stamp-bali">KUTA BEACH '23 YES!</div>
+            <div class="pixel-stamp stamp-anniv">3 YEARS STRONG</div>
+            <div class="pixel-stamp stamp-fragile">HANDLE WITH LOVE</div>
+          </div>
+
+          <!-- Interactive Peel Tape -->
+          <div class="tape-action-container" id="tape-container">
+            <div class="pixel-tape" id="pixel-tape">
+              <span>★ CLICK BUTTON BELOW TO UNBOX YOUR ANNIVERSARY SURPRISE ★</span>
+            </div>
+            <button class="pixel-btn-action" id="unbox-btn">
+              <span>✂️ OPEN CARE PACKAGE</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================= -->
+    <!-- 🎁 PHASE 2: UNBOXED QUEST HUB                             -->
+    <!-- ========================================================= -->
+    <section id="unboxed-hub" class="hub-section hidden">
+      <div id="hub-anchor"></div>
+
+      <div class="hub-header-group">
+        <div class="hub-chip">🎉 3 SURPRISES UNLOCKED</div>
+        <h2 class="hub-title">Inside Your Care Package</h2>
+        <p class="hub-subtitle">Three special quests waiting for you, Alin.</p>
+      </div>
+
+      <!-- 3 Quest Cards -->
+      <div class="quests-grid">
+        
+        <!-- QUEST 1: 🎮 16-BIT MINI-GAME -->
+        <div class="quest-card" id="card-game">
+          <div class="quest-tag arcade-tag">MINI-GAME</div>
+          <div class="quest-art-box game-art-bg">
+            <div class="pixel-couple-sprite">
+              <span class="sprite-boy">🏃‍♂️</span>
+              <span class="trail-hearts">💖 🍦 💖</span>
+              <span class="sprite-girl">🏃‍♀️</span>
+            </div>
+          </div>
+          <div class="quest-info">
+            <h3 class="quest-name">Bali ➔ Surabaya ➔ Bandung</h3>
+            <p class="quest-desc">Run through 3 chapters: saying 'Yes' at Kuta Beach, riding the 670 km rail with Ice Cream, and reuniting in 2026!</p>
+            <button class="pixel-btn-card game-action" id="start-game-btn">
+              <span>▶ Play Mini-Game</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- QUEST 2: 💌 "OPEN WHEN..." VAULT -->
+        <div class="quest-card" id="card-vault">
+          <div class="quest-tag vault-tag">5 SEALED LETTERS</div>
+          <div class="quest-art-box vault-art-bg">
+            <div class="pixel-letters-stack">
+              <span class="pixel-env-icon">💌</span>
+              <span class="sparkle-rot">✨</span>
+            </div>
+          </div>
+          <div class="quest-info">
+            <h3 class="quest-name">The "Open When..." Vault</h3>
+            <p class="quest-desc">5 sealed letters for midnight, when you miss me, when you can't sleep at 2 AM, when you've had a tough day, and reminders of why I love you.</p>
+            <button class="pixel-btn-card vault-action" id="open-vault-btn">
+              <span>✉️ Read Letter Vault</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- QUEST 3: 🌊 KUTA BEACH GRAND LETTER -->
+        <div class="quest-card" id="card-grand-letter">
+          <div class="quest-tag grand-tag">1,096 DAYS</div>
+          <div class="quest-art-box grand-art-bg">
+            <div class="pixel-cassette-box">
+              <div class="pixel-tape-body">
+                <span class="tape-label-text">KYAN & ALIN • SIDE A</span>
+                <div class="pixel-reels">
+                  <div class="reel reel-1"></div>
+                  <div class="reel reel-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="quest-info">
+            <h3 class="quest-name">The Kuta Beach Grand Letter</h3>
+            <p class="quest-desc">The official 3-Year Anniversary love letter recounting the Bali waves, 1,096 days of choosing you, and our future together.</p>
+            <button class="pixel-btn-card grand-action" id="open-grand-letter-btn">
+              <span>📜 Read Grand Letter</span>
+            </button>
+          </div>
+        </div>
+
+      </div> <!-- /quests-grid -->
+
+      <!-- ========================================================= -->
+      <!-- 🎞️ "JUST US" 3-YEAR PHOTO REEL (Only the two of them!)    -->
+      <!-- ========================================================= -->
+      <section class="just-us-section" id="photos-anchor">
+        <div class="just-us-header">
+          <span class="just-us-badge">EXCLUSIVELY US</span>
+          <h3 class="just-us-title">Just Us: 3 Years of Memories 🎞️</h3>
+          <p class="just-us-sub">Every quiet smile, every tight hug, from Bali to Surabaya and Bandung.</p>
+        </div>
+
+        <div class="pixel-photostrip-row" id="photostrip-reel">
+          <!-- Dynamically populated from config.photos (strictly couple photos) -->
+        </div>
+
+        <!-- Shortcut to add more couple photos -->
+        <div class="photo-add-tray">
+          <label for="photo-file-input" class="pixel-btn pixel-btn-green">
+            <span>📷 Add Another Photo of Us</span>
+            <input type="file" id="photo-file-input" accept="image/*" style="display:none">
+          </label>
+        </div>
+      </section>
+
+    </section> <!-- /unboxed-hub -->
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- 🕹️ MODAL 1: 2D PIXEL ARCADE MINI-GAME                     -->
+  <!-- ========================================================= -->
+  <div id="game-modal" class="modal-overlay hidden">
+    <div class="arcade-cabinet">
+      <div class="arcade-header">
+        <span class="arcade-coin">🪙</span>
+        <h3 class="arcade-title">BALI ➔ SURABAYA ➔ BANDUNG: 3-YEAR QUEST</h3>
+        <button class="pixel-close-btn" id="close-game-btn" aria-label="Close Game">✕</button>
+      </div>
+
+      <div class="arcade-screen">
+        <canvas id="game-canvas" width="800" height="450"></canvas>
+        
+        <div class="game-hud">
+          <div class="hud-pill" id="hud-chapter">Chapter 1: Kuta Beach</div>
+          <div class="hud-pill">🍦 Ice Cream: <span id="hud-treats">0</span>/3</div>
+          <div class="hud-pill">📍 Km: <span id="hud-km">670</span></div>
+        </div>
+
+        <!-- Mobile Touch Controls -->
+        <div class="mobile-controls">
+          <div class="dpad-group">
+            <button class="pixel-touch-btn" id="btn-left">◀</button>
+            <button class="pixel-touch-btn" id="btn-right">▶</button>
+          </div>
+          <div class="action-group">
+            <button class="pixel-touch-btn btn-jump" id="btn-jump">JUMP ⬆</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="arcade-bottom">
+        <div class="dialogue-box" id="game-dialogue">
+          Press <strong>START</strong> or tap Jump to guide Kyan across the miles to meet Alin!
+        </div>
+        <button id="restart-game-btn" class="pixel-btn pixel-btn-yellow">Restart Level</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 💌 MODAL 2: "OPEN WHEN..." VAULT                          -->
+  <!-- ========================================================= -->
+  <div id="vault-modal" class="modal-overlay hidden">
+    <div class="vault-window">
+      <div class="vault-window-header">
+        <div>
+          <span class="vault-chip">LDR COMFORT COLLECTION</span>
+          <h2 class="vault-heading">The "Open When..." Vault</h2>
+          <p class="vault-hint">Click an envelope for how your heart is feeling right now.</p>
+        </div>
+        <button class="pixel-close-btn" id="close-vault-btn">✕</button>
+      </div>
+
+      <div class="envelopes-grid" id="vault-envelopes-container">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 📜 MODAL 3: STATIONERY LOVE LETTER (Tear-jerking view)    -->
+  <!-- ========================================================= -->
+  <div id="letter-modal" class="modal-overlay hidden">
+    <div class="stationery-window">
+      <button class="pixel-close-btn stationery-close" id="close-letter-btn">✕</button>
+
+      <div class="stationery-paper">
+        <!-- Embossed Gold Wax Seal -->
+        <div class="wax-seal" id="letter-wax-seal">
+          <span>K&A</span>
+        </div>
+
+        <div class="letter-top-meta">
+          <span class="letter-badge" id="letter-modal-badge">3-Year Anniversary</span>
+          <h2 class="letter-title" id="letter-modal-title">Letter Title</h2>
+          <div class="letter-location-date" id="letter-modal-route">Kuta Beach, Bali ➔ Surabaya & Bandung • Nov 24, 2026</div>
+        </div>
+
+        <div class="letter-prose" id="letter-modal-body">
+          <!-- Injected via script.js -->
+        </div>
+
+        <div class="letter-closing">
+          <div class="letter-sig" id="letter-modal-signoff">
+            Forever and always yours,<br>
+            Kyan ❤️
+          </div>
+          <div class="letter-postscript">
+            🌊 In memory of that Bali breeze at Kuta Beach • 1,096 days of loving you
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Element -->
+  <audio id="bg-audio" preload="auto" loop>
+    <source src="music.mp3" type="audio/mp3">
+  </audio>
+
+  <!-- Scripts -->
+  <script src="config.js"></script>
+  <script src="game.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
